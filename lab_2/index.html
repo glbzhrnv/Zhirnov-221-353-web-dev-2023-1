@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Формы</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Обратная связь</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="fullname">ФИО</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Откуда узнали о нас</label>
+                <div class="radio-group">
+                    <input type="radio" id="radio-1" name="source" value="Интернет">
+                    <label for="radio-1">Интернет</label>
+                    <input type="radio" id="radio-2" name="source" value="Реклама">
+                    <label for="radio-2">Реклама</label>
+                    <input type="radio" id="radio-3" name="source" value="Друзья">
+                    <label for="radio-3">Друзья</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type">Тип обращения</label>
+                <select id="type" name="type">
+                    <option value="Жалоба">Жалоба</option>
+                    <option value="Предложение">Предложение</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Текст сообщения</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="attachments">Вложения</label>
+                <input type="file" id="attachments" name="attachments">
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    Даю согласие на обработку персональных данных
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="authentication-container">
+        <form action="https://httpbin.org/post" method="post">
+            <h2>Авторизация</h2>
+            <div class="form-group">
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="remember"> Запомнить меня
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
