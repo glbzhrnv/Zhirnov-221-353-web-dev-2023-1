@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.authentication-container {
+    background: url(img1.jpg) no-repeat center center fixed; 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
+    color: #ffffff; 
+}
+
+.authentication-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px; 
+}
+
+.authentication-container .form-group {
+    margin-bottom: 20px;
+}
+
+.authentication-container label {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.authentication-container input[type="text"],
+.authentication-container input[type="password"] {
+    width: 25%;
+    padding: 10px;
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    color: #000000; 
+}
+
+.authentication-container input[type="text"]:focus,
+.authentication-container input[type="password"]:focus {
+    outline: none;
+    background-color: #e6e6e6; 
+}
+
+.authentication-container label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.authentication-container button {
+    background-color: #810a91; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.authentication-container button:hover {
+    background-color: #670773; 
+}
