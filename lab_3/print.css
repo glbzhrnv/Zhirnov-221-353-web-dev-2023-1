@@ -1,0 +1,14 @@
+body {
+    background: #fff;
+    color: #000; 
+}
+
+header, aside, footer {
+    display: none; 
+}
+
+article {
+    border: none; 
+    margin: 0;
+    padding: 0;
+}
